@@ -1,0 +1,24 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "categoryName": "gift"
+    },
+    {
+      "id": "2",
+      "categoryName": "intelligence"
+    },
+    {
+      "id": "3",
+      "categoryName": "fiveSenses"
+    },
+    {
+      "id": "4",
+      "categoryName": "emotion"
+    },
+    {
+      "id": "5",
+      "categoryName": "society"
+    }
+  ]
+}

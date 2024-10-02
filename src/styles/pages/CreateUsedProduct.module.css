@@ -1,0 +1,136 @@
+/* 변지윤 */
+.createUsedProduct__container {
+  width: var(--max-width);
+  margin: var(--page-side-margin);
+}
+
+.createUsedProduct__header {
+  font-size: var(--font-size-medium);
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container__title {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-medium);
+  border-bottom: 1px solid var(--color-black);
+  height: 100px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.inner__title {
+  width: 200px;
+  height: 48px;
+}
+
+.image__container {
+  display: flex;
+  padding: 30px 0;
+}
+
+.name__container {
+  display: flex;
+  padding: 30px 0;
+}
+
+.name__container .inner__title {
+  display: flex;
+  align-items: center;
+}
+
+.name__container .inner__title,
+.image__container .inner__title {
+  display: flex;
+  align-items: center;
+}
+
+.title__input {
+  width: 500px;
+  border: 1px solid var(--color-grey);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-regular);
+  padding: 0 12px;
+}
+
+.title__input:focus {
+  outline-color: var(--color-blue);
+}
+
+.condition__container {
+  display: flex;
+  padding: 30px 0;
+}
+
+.detail__container {
+  display: flex;
+  padding: 30px 0;
+}
+
+.detail__input {
+  width: 500px;
+  height: 100px;
+  border: 1px solid var(--color-grey);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-regular);
+  padding: 12px 12px;
+  resize: none;
+}
+
+.detail__input:focus {
+  outline-color: var(--color-blue);
+}
+
+.num__container {
+  display: flex;
+  padding: 30px 0;
+}
+
+.num__container .inner__title {
+  display: flex;
+  align-items: center;
+}
+
+.transaction__container {
+  display: flex;
+  padding: 30px 0;
+}
+
+.transaction__container .inner__title {
+  display: flex;
+  align-items: center;
+}
+
+.fixed__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  height: 76px;
+  background-color: var(--color-black);
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  z-index: 10;
+}
+
+.fixed__inner {
+  width: var(--max-width);
+  display: flex;
+  justify-content: flex-end;
+  height: 48px;
+}
+  
+.fixed__create {
+  width: 255px;
+  border: 1px solid black;
+  border-radius: var(--border-radius);
+  background-color: var(--color-blue-light);
+  height: 48px;
+  cursor: pointer;
+  font-size: var(--font-size-regular);
+  font-weight: bold;
+}

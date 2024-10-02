@@ -1,0 +1,22 @@
+.detail__left {
+  width: 50%;
+}
+
+.detail__thumb__img {
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+
+.detail__imgs {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.detail__imgs img {
+  width: 20%;
+  height: 80px;
+  cursor: pointer;
+  object-fit: cover;
+}

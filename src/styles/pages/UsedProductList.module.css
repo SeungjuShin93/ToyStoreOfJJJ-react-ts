@@ -1,0 +1,90 @@
+/* 신승주 */
+
+.products__container {
+  width: var(--max-width);
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item__container {
+  display: flex;
+  width: 48%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item__thumb__img {
+  width: 50%;
+  height: 246px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+}
+
+.item__imgs {
+  height: 246px;
+}
+
+.item__descriptions {
+  width: 58%;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item__user {
+  font-size: var(--font-size-small);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.item__title {
+  font-weight: bold;
+}
+
+.item__infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 306px;
+}
+
+.info__container {
+  height: 246px;
+}
+
+.item__price {
+  color: var(--color-red);
+  font-weight: bold;
+}
+
+.item__user,
+.item__title,
+.item__price,
+.item__status,
+.item__description,
+.item__count,
+.item__method {
+  margin-bottom: 9px;
+}
+
+.btn__box {
+  display: flex;
+  margin-left: auto;
+  position: relative;
+}
+
+.no__product {
+  font-size: var(--font-size-regular);
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}

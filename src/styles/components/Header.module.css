@@ -1,0 +1,124 @@
+/* 박용재 */
+
+.header {
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo__container,
+.nav {
+  width: var(--max-width);
+  height: var(--box-height);
+}
+
+.logo__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.logo__img {
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav__category {
+  width: 100%;
+  display: flex;
+  font-size: var(--font-size-medium);
+  justify-content: space-between;
+}
+
+.nav__link {
+  cursor: pointer;
+  font-size: var(--font-size-medium);
+}
+
+.nav__link:hover,
+.nav__link.active {
+  color: var(--color-blue);
+}
+
+.nav__icons {
+  position: relative;
+  display: flex;
+  min-width: 150px;
+  justify-content: space-between;
+  margin-left: 80px;
+}
+
+.nav__icons li {
+  cursor: pointer;
+}
+
+.nav__icons li:hover {
+  color: var(--color-blue);
+}
+
+.nav__auth {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: var(--font-size-regular);
+}
+
+.login__auth {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: var(--font-size-small);
+}
+
+/* header - fixed */
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  top: 0;
+  box-shadow: var(--box-shadow);
+}
+
+.fixed .nav {
+  position: relative;
+  top: 8px;
+  transform: translateY(-5px);
+}
+
+.fixed .logo__container {
+  position: absolute;
+  margin-top: 0;
+  top: 50%;
+  left: -160px;
+  height: var(--box-height);
+  width: 80px;
+  transform: translateY(-54%) scale(0.5);
+  animation: flicker 0.5s;
+}
+
+.fixed .nav__auth {
+  display: none;
+}
+
+@keyframes flicker {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

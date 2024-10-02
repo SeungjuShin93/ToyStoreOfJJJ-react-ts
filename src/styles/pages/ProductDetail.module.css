@@ -1,0 +1,111 @@
+/* 신승주 */
+
+.productDetail {
+  width: var(--max-width);
+}
+
+.detail__container {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.detail__right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 50px;
+}
+
+.product__info {
+  font-size: var(--font-size-medium);
+  margin-top: 10px;
+}
+
+.product__price {
+  color: var(--color-red);
+  margin: 24px 0;
+}
+
+.product__rating {
+  display: flex;
+  align-items: flex-end;
+}
+
+.product__rating h3 {
+  margin-right: 8px;
+  font-size: var(--font-size-regular);
+}
+
+.product__rating p {
+  color: var(--color-blue);
+  font-size: var(--font-size-regular);
+}
+
+.detail__actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  margin: 40px 0;
+  border-top: 1px solid var(--color-grey-light);
+  border-bottom: 1px solid var(--color-grey-light);
+}
+
+.actions__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.detail__purchase {
+  display: flex;
+  flex-direction: column;
+}
+
+.total__price__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: var(--font-size-medium);
+}
+
+.product__total__price {
+  color: var(--color-red);
+  margin-left: 10px;
+  font-size: var(--font-size-medium);
+}
+
+/* Review CSS */
+.review {
+  width: 100%;
+  border-bottom: 1px solid var(--color-grey-light);
+  padding: 50px 0;
+}
+
+.review:first-child {
+  padding-top: 0;
+}
+
+.review__id {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.star__date__container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.review__img__container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.review__img__container img {
+  width: 115px;
+  height: 80px;
+  object-fit: cover;
+}

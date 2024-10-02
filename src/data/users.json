@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "userLoginId": "seungju123",
+      "userPassword": "seungju123",
+      "userName": "신승주",
+      "userPhone": "01099999999",
+      "userEmail": "shin@example.com",
+      "userAddress": "서울특별시 강남구 가로수길 5",
+      "userAddressDetail": "999동 999호",
+      "userGender": "male",
+      "userBirth": "1993-08-18",
+      "userSignUpDate": "2024-08-18T00:00:00Z",
+      "userWithdrawDate": null
+    },
+    {
+      "id": "2",
+      "userLoginId": "jiyoon123",
+      "userPassword": "jiyoon123",
+      "userName": "변지윤",
+      "userPhone": "01011111111",
+      "userEmail": "yoon@example.com",
+      "userAddress": "부산 해운대구 APEC로 30",
+      "userAddressDetail": "1층",
+      "userGender": "female",
+      "userBirth": "1990-01-01",
+      "userSignUpDate": "2024-07-02T00:00:00Z",
+      "userWithdrawDate": null
+    },
+    {
+      "id": "3",
+      "userLoginId": "yongjae123",
+      "userPassword": "yongjae123",
+      "userName": "박용재",
+      "userPhone": "01055555555",
+      "userEmail": "park@example.com",
+      "userAddress": "부산광역시 수영구 수영로 429",
+      "userAddressDetail": "3층",
+      "userGender": "male",
+      "userBirth": "1990-12-31",
+      "userSignUpDate": "2024-08-02T00:00:00Z",
+      "userWithdrawDate": null
+    },
+    {
+      "id": "4",
+      "userLoginId": "example123",
+      "userPassword": "example123",
+      "userName": "exampleUser",
+      "userPhone": "01012345678",
+      "userEmail": "example@example.com",
+      "userAddress": "경기 성남시 분당구 대왕판교로 477",
+      "userAddressDetail": "000동 000호",
+      "userGender": "female",
+      "userBirth": "2000-06-01",
+      "userSignUpDate": "2024-09-13T00:00:00Z",
+      "userWithdrawDate": null
+    }
+  ]
+}

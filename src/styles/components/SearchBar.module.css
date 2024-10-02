@@ -1,0 +1,35 @@
+/* 신승주 */
+
+.search {
+  width: 100%;
+  height: var(--box-height);
+  display: flex;
+  background-color: var(--color-blue);
+  justify-content: center;
+  align-items: center;
+}
+
+.search label {
+  margin-right: 32px;
+  padding-top: 5px;
+  font-size: var(--font-size-medium);
+}
+
+.input__wrapper {
+  position: relative;
+}
+
+.search input {
+  width: 600px;
+  font-size: var(--font-size-medium);
+  height: 60px;
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius);
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+.search input::placeholder {
+  text-align: center;
+}
