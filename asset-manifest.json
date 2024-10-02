@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ToyStoreOfJJJ-react-ts/static/css/main.4f83b804.css",
+    "main.js": "/ToyStoreOfJJJ-react-ts/static/js/main.0f572c75.js",
+    "static/js/952.943f850e.chunk.js": "/ToyStoreOfJJJ-react-ts/static/js/952.943f850e.chunk.js",
+    "static/js/453.68693753.chunk.js": "/ToyStoreOfJJJ-react-ts/static/js/453.68693753.chunk.js",
+    "static/media/desc03.jpeg": "/ToyStoreOfJJJ-react-ts/static/media/desc03.fc7f58a7b39e9a8fea9f.jpeg",
+    "static/media/desc04.jpeg": "/ToyStoreOfJJJ-react-ts/static/media/desc04.8ace359599d4e4670b71.jpeg",
+    "static/media/desc02.jpeg": "/ToyStoreOfJJJ-react-ts/static/media/desc02.793013a32080e1f92793.jpeg",
+    "static/media/desc01.jpeg": "/ToyStoreOfJJJ-react-ts/static/media/desc01.49cd9a6f77999fe81a55.jpeg",
+    "static/media/GmarketSansMedium.otf": "/ToyStoreOfJJJ-react-ts/static/media/GmarketSansMedium.3b975ddd58dcbe363ee5.otf",
+    "static/media/logo.png": "/ToyStoreOfJJJ-react-ts/static/media/logo.89283a84f5cefb057dd2.png",
+    "index.html": "/ToyStoreOfJJJ-react-ts/index.html",
+    "main.4f83b804.css.map": "/ToyStoreOfJJJ-react-ts/static/css/main.4f83b804.css.map",
+    "main.0f572c75.js.map": "/ToyStoreOfJJJ-react-ts/static/js/main.0f572c75.js.map",
+    "952.943f850e.chunk.js.map": "/ToyStoreOfJJJ-react-ts/static/js/952.943f850e.chunk.js.map",
+    "453.68693753.chunk.js.map": "/ToyStoreOfJJJ-react-ts/static/js/453.68693753.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f83b804.css",
+    "static/js/main.0f572c75.js"
+  ]
+}
