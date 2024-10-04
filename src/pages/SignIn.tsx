@@ -5,17 +5,20 @@ import { Logo } from '../components/Header';
 import { Button, FormControlLabel, FormGroup, Switch } from '@mui/material';
 import { getUsers } from '../services/userServices';
 import { User } from '../../type';
+import useLoading from '../hooks/useLoading';
+import LoadingIcon from '../components/LoadingIcon';
 
 export default function SignIn() {
   const navigate = useNavigate();
+  const { isLoading, startLoading, stopLoading } = useLoading(false);
   const { state } = useLocation();
   const [loginId, setLoginId] = useState('');
   const [password, setPassword] = useState('');
   const [errors, setErrors] = useState<string | undefined>(undefined);
   const [isRememberLogin, setIsRememberLogin] = useState(true);
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    startLoading();
     try {
       const users: User[] = await getUsers();
       const user = users.find(
@@ -42,6 +45,8 @@ export default function SignIn() {
     } catch (error) {
       console.error(error);
       setErrors(`로그인 중 에러 발생. 잠시 후 다시 시도해주세요`);
+    } finally {
+      stopLoading();
     }
   };
 
@@ -88,7 +93,7 @@ export default function SignIn() {
             </div>
             {errors && <p className={styles.error}>{errors}</p>}
           </div>
-
+          {isLoading && <LoadingIcon />}
           <FormGroup
             sx={{
               marginRight: 'auto',

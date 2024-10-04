@@ -49,6 +49,8 @@ import {
 } from '../services/wishListServices';
 import { UserStore } from '../stores/User.store';
 import { getUserById } from '../services/userServices';
+import useLoading from '../hooks/useLoading';
+import LoadingIcon from '../components/LoadingIcon';
 
 export default function ProductDetail() {
   const navigate = useNavigate();
@@ -63,9 +65,10 @@ export default function ProductDetail() {
   const { count, setCounter, increaseCounter, decreaseCounter } = useCounter(1);
   const { activeState, handleStateChange, handleToggle } =
     useActiveState(false);
-
+  const { isLoading, startLoading, stopLoading } = useLoading(true);
   useEffect(() => {
     const fetchData = async () => {
+      startLoading();
       try {
         const product = products.find(
           (product) => String(product.id) === String(productId)
@@ -89,6 +92,8 @@ export default function ProductDetail() {
         }
       } catch (error) {
         console.error(error);
+      } finally {
+        stopLoading();
       }
     };
     fetchData();
@@ -206,6 +211,7 @@ export default function ProductDetail() {
             images={images}
             currentImg={currentImg}
             handleImgClick={handleImgClick}
+            isLoading={isLoading}
           />
           <div className={styles.detail__right}>
             <div className={styles.product__info}>
@@ -327,7 +333,7 @@ interface DetailTabProp {
 }
 
 function DetailTab({ productId, loginedUserId }: DetailTabProp) {
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(1);
   const { reviews } = ReviewStore();
   const [productReviews, setProductReviews] = useState<Review[]>([]);
 
@@ -449,8 +455,10 @@ function ReviewComponent({
     undefined
   );
   const [reviewUser, setReviewUser] = useState<User | null>(null);
+  const { isLoading, startLoading, stopLoading } = useLoading(true);
   useEffect(() => {
     const fetchData = async () => {
+      startLoading();
       try {
         const reviewImages = await getReviewImages();
         const productImages = reviewImages.filter(
@@ -461,6 +469,8 @@ function ReviewComponent({
         setReviewUser(reviewUser);
       } catch (error) {
         console.error(error);
+      } finally {
+        stopLoading();
       }
     };
     fetchData();
@@ -510,7 +520,13 @@ function ReviewComponent({
       {images && (
         <div className={styles.review__img__container}>
           {images.map((image, index) => (
-            <img key={index} src={image} alt='이미지' />
+            <>
+              {isLoading ? (
+                <LoadingIcon />
+              ) : (
+                <img key={index} src={image} alt='이미지' />
+              )}
+            </>
           ))}
         </div>
       )}

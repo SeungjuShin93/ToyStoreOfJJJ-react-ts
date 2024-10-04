@@ -23,6 +23,7 @@ import {
 import { getUserById } from '../services/userServices';
 import noImage from '../assets/images/noImage.png';
 import { UserStore } from '../stores/User.store';
+import useLoading from '../hooks/useLoading';
 
 export default function UsedProductList() {
   const navigate = useNavigate();
@@ -114,9 +115,10 @@ function UsedProductComponent({
     useActiveState(false);
   const navigate = useNavigate();
   const { pathname } = useLocation();
-
+  const { isLoading, startLoading, stopLoading } = useLoading(true);
   useEffect(() => {
     const fetchData = async () => {
+      startLoading();
       try {
         const usedProductImagesArray = await getUsedProductImages();
         const currentUsedProductImages = usedProductImagesArray.filter(
@@ -135,6 +137,8 @@ function UsedProductComponent({
         }
       } catch (error) {
         console.error(error);
+      } finally {
+        stopLoading();
       }
     };
     fetchData();
@@ -192,6 +196,7 @@ function UsedProductComponent({
         images={[usedProductThumbnail, ...usedProductImages]}
         currentImg={currentImg}
         handleImgClick={handleImgClick}
+        isLoading={isLoading}
         customStyles={customImageTabStyles}
       />
       <div className={styles.item__descriptions}>

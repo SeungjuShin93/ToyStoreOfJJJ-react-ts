@@ -6,7 +6,7 @@ import useLoading from '../hooks/useLoading';
 import LoadingIcon from './LoadingIcon';
 
 const ImageSlider = () => {
-  const { isLoading, startLoading, stopLoading } = useLoading();
+  const { isLoading, startLoading, stopLoading } = useLoading(true);
   const [currentIndex, setCurrentIndex] = useState(1);
   const sliderRef = useRef<HTMLDivElement>(null);
   const [isTransitioning, setIsTransitioning] = useState(false);
