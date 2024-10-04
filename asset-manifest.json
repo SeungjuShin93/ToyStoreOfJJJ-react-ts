@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ToyStoreOfJJJ-react-ts/static/css/main.70b231ca.css",
-    "main.js": "/ToyStoreOfJJJ-react-ts/static/js/main.798b4e02.js",
+    "main.js": "/ToyStoreOfJJJ-react-ts/static/js/main.84e90dc5.js",
     "static/js/952.943f850e.chunk.js": "/ToyStoreOfJJJ-react-ts/static/js/952.943f850e.chunk.js",
     "static/js/453.68693753.chunk.js": "/ToyStoreOfJJJ-react-ts/static/js/453.68693753.chunk.js",
     "static/media/desc03.jpeg": "/ToyStoreOfJJJ-react-ts/static/media/desc03.fc7f58a7b39e9a8fea9f.jpeg",
@@ -12,12 +12,12 @@
     "static/media/logo.png": "/ToyStoreOfJJJ-react-ts/static/media/logo.89283a84f5cefb057dd2.png",
     "index.html": "/ToyStoreOfJJJ-react-ts/index.html",
     "main.70b231ca.css.map": "/ToyStoreOfJJJ-react-ts/static/css/main.70b231ca.css.map",
-    "main.798b4e02.js.map": "/ToyStoreOfJJJ-react-ts/static/js/main.798b4e02.js.map",
+    "main.84e90dc5.js.map": "/ToyStoreOfJJJ-react-ts/static/js/main.84e90dc5.js.map",
     "952.943f850e.chunk.js.map": "/ToyStoreOfJJJ-react-ts/static/js/952.943f850e.chunk.js.map",
     "453.68693753.chunk.js.map": "/ToyStoreOfJJJ-react-ts/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.70b231ca.css",
-    "static/js/main.798b4e02.js"
+    "static/js/main.84e90dc5.js"
   ]
 }
