@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { User } from '../../type';
+import { persist } from 'zustand/middleware';
 
 interface UserStoreState {
   user: User | null;
@@ -7,8 +8,15 @@ interface UserStoreState {
   clearUser: () => void;
 }
 
-export const UserStore = create<UserStoreState>((set) => ({
-  user: null,
-  setUser: (user) => set({ user }),
-  clearUser: () => set({ user: null }),
-}));
+export const UserStore = create(
+  persist<UserStoreState>(
+    (set) => ({
+      user: null,
+      setUser: (user) => set({ user }),
+      clearUser: () => set({ user: null }),
+    }),
+    {
+      name: 'UserStore',
+    }
+  )
+);

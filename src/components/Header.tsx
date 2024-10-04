@@ -103,6 +103,7 @@ export default function Header() {
                 navigate('/');
                 clearUser();
                 localStorage.removeItem('user');
+                UserStore.persist.clearStorage();
               }}
             >
               로그아웃
