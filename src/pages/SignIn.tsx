@@ -12,7 +12,7 @@ export default function SignIn() {
   const [loginId, setLoginId] = useState('');
   const [password, setPassword] = useState('');
   const [errors, setErrors] = useState<string | undefined>(undefined);
-  const [isRememberLogin, setIsRememberLogin] = useState(false);
+  const [isRememberLogin, setIsRememberLogin] = useState(true);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -76,7 +76,7 @@ export default function SignIn() {
               </div>
               <div className={styles.input__box}>
                 <input
-                  type='text'
+                  type='password'
                   className={styles.input}
                   name='password'
                   placeholder='8 ~ 12자의 영문과 숫자 조합'
@@ -117,6 +117,13 @@ export default function SignIn() {
             </Button>
           </div>
         </form>
+        <div className={styles.login__info}>
+          <div>시간이 없으시다면</div>
+          <div className={styles.login__detail}>
+            <span>seungju123</span>
+            <span>seungju123</span>
+          </div>
+        </div>
       </div>
       <ul className={styles.action__container}>
         <li>아이디 찾기</li>

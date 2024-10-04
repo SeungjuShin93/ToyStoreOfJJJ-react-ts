@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   border-radius: var(--border-radius);
+  position: relative;
 }
 
 .login__form {
@@ -58,6 +59,33 @@
   padding-left: 36px;
   margin-top: 20px;
   width: 100%;
+}
+
+.login__info {
+  position: absolute;
+  right: -150px;
+  top: -14px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-red);
+}
+
+.login__detail {
+  display: flex;
+  flex-direction: column;
+  height: 75px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.login__info > span:first-of-type {
+  margin-bottom: 10px;
+}
+
+.login__info > span:last-of-type {
+  margin-top: 50px;
 }
 
 .action__container {

@@ -350,7 +350,7 @@ export default function SignUp() {
               <div className={styles.input__box}>
                 <input
                   className={styles.input}
-                  type='text'
+                  type='password'
                   name='userPassword'
                   minLength={8}
                   maxLength={12}
@@ -376,7 +376,7 @@ export default function SignUp() {
               <div className={styles.input__box}>
                 <input
                   className={styles.input}
-                  type='text'
+                  type='password'
                   name='passwordCheck'
                   minLength={8}
                   maxLength={12}

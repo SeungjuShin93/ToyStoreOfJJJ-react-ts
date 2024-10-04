@@ -34,23 +34,11 @@ function App() {
   }, [location.state, setUser]);
 
   useEffect(() => {
-    // 기본 값을 신승주로 로그인 시켜두기
-    const fetchDefaultUser = async () => {
-      try {
-        const user = await getUserById(1);
-        console.log('작동햇나');
-        setUser(user);
-      } catch (error) {
-        console.error('Error fetching default user:', error);
-      }
-    };
     // 새로고침해도 로그인 상태 유지
     const storedUser = localStorage.getItem('user');
     if (storedUser) {
       const user = JSON.parse(storedUser);
       setUser(user);
-    } else {
-      fetchDefaultUser();
     }
   }, [setUser]);
 
