@@ -41,6 +41,7 @@ export default function SignIn() {
       setPassword('');
     } catch (error) {
       console.error(error);
+      setErrors(`로그인 중 에러 발생. 잠시 후 다시 시도해주세요`);
     }
   };
 

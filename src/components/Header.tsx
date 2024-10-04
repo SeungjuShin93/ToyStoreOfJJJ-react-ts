@@ -34,8 +34,6 @@ export default function Header() {
   const navigate = useNavigate();
   const { isFixed, setIsFixed } = FixedStore();
   const { user, clearUser } = UserStore();
-  console.log(user);
-  console.log(user?.userName);
   const handleScroll = () => {
     if (window.scrollY > 79) {
       setIsFixed(true);
@@ -91,27 +89,36 @@ export default function Header() {
               sx={{ fontSize: 'var(--font-size-large)' }}
             />
           </li>
-
-          {user ? (
-            <ul className={styles.login__auth}>
-              <li onClick={() => navigate('/myPage')}>{user.userName}님</li>
-              <li
-                onClick={() => {
-                  navigate('/');
-                  clearUser();
-                  localStorage.removeItem('user');
-                }}
-              >
-                로그아웃
-              </li>
-            </ul>
-          ) : (
-            <ul className={styles.nav__auth}>
-              <li onClick={() => navigate('/signIn')}>로그인</li>
-              <li onClick={() => navigate('/signUp')}>회원가입</li>
-            </ul>
-          )}
         </ul>
+        {user ? (
+          <ul className={styles.login__auth}>
+            <li
+              className={styles.login__username}
+              onClick={() => navigate('/myPage')}
+            >
+              {user.userName}님
+            </li>
+            <li
+              onClick={() => {
+                navigate('/');
+                clearUser();
+                localStorage.removeItem('user');
+              }}
+            >
+              로그아웃
+            </li>
+          </ul>
+        ) : (
+          <ul className={styles.login__auth}>
+            <li
+              className={styles.login__login}
+              onClick={() => navigate('/signIn')}
+            >
+              로그인
+            </li>
+            <li onClick={() => navigate('/signUp')}>회원가입</li>
+          </ul>
+        )}
       </nav>
     </header>
   );

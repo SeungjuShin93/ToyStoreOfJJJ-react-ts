@@ -31,6 +31,7 @@
   display: flex;
   align-items: center;
   transition: all 0.3s ease-in-out;
+  position: relative;
 }
 
 .nav__category {
@@ -41,7 +42,6 @@
 }
 
 .nav__link {
-  cursor: pointer;
   font-size: var(--font-size-medium);
 }
 
@@ -51,37 +51,35 @@
 }
 
 .nav__icons {
-  position: relative;
   display: flex;
   min-width: 150px;
   justify-content: space-between;
   margin-left: 80px;
 }
 
-.nav__icons li {
+.nav li {
   cursor: pointer;
 }
 
-.nav__icons li:hover {
+.nav li:hover {
   color: var(--color-blue);
-}
-
-.nav__auth {
-  position: absolute;
-  bottom: 50px;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  font-size: var(--font-size-regular);
 }
 
 .login__auth {
   position: absolute;
-  bottom: 50px;
+  bottom: 70px;
+  right: 3px;
   display: flex;
-  width: 100%;
-  justify-content: space-between;
-  font-size: var(--font-size-small);
+  justify-content: flex-end;
+  font-size: var(--font-size-regular);
+}
+
+.login__login {
+  margin-right: 36px;
+}
+
+.login__username {
+  margin-right: 22px;
 }
 
 /* header - fixed */

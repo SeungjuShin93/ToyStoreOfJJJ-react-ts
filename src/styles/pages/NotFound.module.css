@@ -1,0 +1,13 @@
+.no__page {
+}
+
+.no__page {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.no__page h3 {
+  color: var(--color-red);
+  font-size: var(--font-size-medium);
+}
